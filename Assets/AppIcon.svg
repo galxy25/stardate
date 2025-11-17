@@ -1,0 +1,114 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for warp effect -->
+    <radialGradient id="warpGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#1a1a3a;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#2a2a5a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a1a;stop-opacity:1" />
+    </radialGradient>
+
+    <!-- Gradient for stars -->
+    <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00aaff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.6" />
+    </linearGradient>
+
+    <!-- Glow filter for stars -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#warpGradient)"/>
+
+  <!-- Warp lines - converging to center -->
+  <g opacity="0.6">
+    <!-- Horizontal warp lines -->
+    <line x1="0" y1="256" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+    <line x1="0" y1="384" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+    <line x1="0" y1="512" x2="512" y2="512" stroke="#00ffff" stroke-width="3" opacity="0.6"/>
+    <line x1="0" y1="640" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+    <line x1="0" y1="768" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+
+    <line x1="1024" y1="256" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+    <line x1="1024" y1="384" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+    <line x1="1024" y1="640" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+    <line x1="1024" y1="768" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+
+    <!-- Vertical warp lines -->
+    <line x1="256" y1="0" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+    <line x1="384" y1="0" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+    <line x1="512" y1="0" x2="512" y2="512" stroke="#00ffff" stroke-width="3" opacity="0.6"/>
+    <line x1="640" y1="0" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+    <line x1="768" y1="0" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+
+    <line x1="256" y1="1024" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+    <line x1="384" y1="1024" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+    <line x1="640" y1="1024" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+    <line x1="768" y1="1024" x2="512" y2="512" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+  </g>
+
+  <!-- Stars - larger and brighter near center (warp effect) -->
+  <!-- Outer stars (smaller) -->
+  <circle cx="150" cy="200" r="2" fill="url(#starGradient)" filter="url(#glow)" opacity="0.7"/>
+  <circle cx="874" cy="150" r="2" fill="url(#starGradient)" filter="url(#glow)" opacity="0.7"/>
+  <circle cx="200" cy="824" r="2" fill="url(#starGradient)" filter="url(#glow)" opacity="0.7"/>
+  <circle cx="824" cy="874" r="2" fill="url(#starGradient)" filter="url(#glow)" opacity="0.7"/>
+  <circle cx="100" cy="500" r="2" fill="url(#starGradient)" filter="url(#glow)" opacity="0.7"/>
+  <circle cx="924" cy="500" r="2" fill="url(#starGradient)" filter="url(#glow)" opacity="0.7"/>
+  <circle cx="500" cy="100" r="2" fill="url(#starGradient)" filter="url(#glow)" opacity="0.7"/>
+  <circle cx="500" cy="924" r="2" fill="url(#starGradient)" filter="url(#glow)" opacity="0.7"/>
+
+  <!-- Mid-range stars (medium) -->
+  <circle cx="300" cy="300" r="3" fill="url(#starGradient)" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="724" cy="300" r="3" fill="url(#starGradient)" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="300" cy="724" r="3" fill="url(#starGradient)" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="724" cy="724" r="3" fill="url(#starGradient)" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="350" cy="450" r="3" fill="url(#starGradient)" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="674" cy="450" r="3" fill="url(#starGradient)" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="350" cy="574" r="3" fill="url(#starGradient)" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="674" cy="574" r="3" fill="url(#starGradient)" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="450" cy="300" r="3" fill="url(#starGradient)" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="574" cy="300" r="3" fill="url(#starGradient)" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="450" cy="724" r="3" fill="url(#starGradient)" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="574" cy="724" r="3" fill="url(#starGradient)" filter="url(#glow)" opacity="0.8"/>
+
+  <!-- Inner stars (larger, brighter - warp effect) -->
+  <circle cx="400" cy="400" r="4" fill="url(#starGradient)" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="624" cy="400" r="4" fill="url(#starGradient)" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="400" cy="624" r="4" fill="url(#starGradient)" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="624" cy="624" r="4" fill="url(#starGradient)" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="450" cy="450" r="5" fill="url(#starGradient)" filter="url(#glow)" opacity="0.95"/>
+  <circle cx="574" cy="450" r="5" fill="url(#starGradient)" filter="url(#glow)" opacity="0.95"/>
+  <circle cx="450" cy="574" r="5" fill="url(#starGradient)" filter="url(#glow)" opacity="0.95"/>
+  <circle cx="574" cy="574" r="5" fill="url(#starGradient)" filter="url(#glow)" opacity="0.95"/>
+
+  <!-- Center star (brightest - warp point) -->
+  <circle cx="512" cy="512" r="8" fill="#00ffff" filter="url(#glow)" opacity="1"/>
+  <circle cx="512" cy="512" r="12" fill="#00ffff" opacity="0.3"/>
+  <circle cx="512" cy="512" r="16" fill="#00ffff" opacity="0.15"/>
+
+  <!-- Additional warp streaks -->
+  <g opacity="0.5">
+    <path d="M 200 200 L 512 512" stroke="#00aaff" stroke-width="1" fill="none" opacity="0.3"/>
+    <path d="M 824 200 L 512 512" stroke="#00aaff" stroke-width="1" fill="none" opacity="0.3"/>
+    <path d="M 200 824 L 512 512" stroke="#00aaff" stroke-width="1" fill="none" opacity="0.3"/>
+    <path d="M 824 824 L 512 512" stroke="#00aaff" stroke-width="1" fill="none" opacity="0.3"/>
+  </g>
+
+  <!-- Motion blur effect for stars (warp streaks) -->
+  <g opacity="0.4">
+    <!-- Streaks pointing toward center -->
+    <ellipse cx="400" cy="400" rx="15" ry="3" fill="#00ffff" transform="rotate(-45 400 400)" opacity="0.5"/>
+    <ellipse cx="624" cy="400" rx="15" ry="3" fill="#00ffff" transform="rotate(45 624 400)" opacity="0.5"/>
+    <ellipse cx="400" cy="624" rx="15" ry="3" fill="#00ffff" transform="rotate(45 400 624)" opacity="0.5"/>
+    <ellipse cx="624" cy="624" rx="15" ry="3" fill="#00ffff" transform="rotate(-45 624 624)" opacity="0.5"/>
+  </g>
+</svg>
