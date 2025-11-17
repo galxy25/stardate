@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>StarDate needs access to speech recognition to transcribe your diary entries.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>StarDate needs access to your microphone to record your diary entries.</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>StarDate needs access to save your diary entries and audio recordings.</string>
+</dict>
+</plist>
